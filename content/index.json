@@ -1,0 +1,14 @@
+{
+  "title": "Home Page",
+  "sub_title": "Go Away!",
+  "paragraphs":[
+    "This is a private web site.  Public viewing is not welcome and highly discourgaged.",
+    "No responsibility will be taken for any damage or loss you might incurr as a result of using this site.",
+    "There are no assurances what so ever you will be safe to use this site."
+  ],
+  "options": [{
+    "title": "Return from whence you came",
+    "target": "./other"
+  }],
+  "templateName": "basepage.html"
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Login",
+  "paragraphs":[
+    "Click on the button to enter site",
+    "Note if your machine is not an authorised device it is HIGHLY likely damage or corruption will occur on your machine",
+    "Only proceed if you are certian you are authorised to use this machine and agree to allow your machine and all of its data to be corrupted and or harvested for unspecified use."
+  ],
+  "options": [{
+    "title": "Enter",
+    "target": "."
+  }],
+  "templateName": "basepage.html"
+}

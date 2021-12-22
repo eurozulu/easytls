@@ -1,0 +1,20 @@
+<head>
+    <title>{{.PageTitle}}</title>
+</head>
+
+<h1>{{.PageTitle}}</h1>
+{{if not .SubTitle}}
+<h2>{{.SubTitle}}</h2>
+{{end}}
+
+{{range .Paragraphs}}
+<p>{{.}}</p>
+{{end}}
+
+<ul>
+    {{range .Options}}
+    <li>
+        <a href="{{.Target}}">{{.Title}}</a>
+    </li>
+    {{end}}
+</ul>
