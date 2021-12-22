@@ -17,4 +17,4 @@ COPY --from=builder /build/content/ ./content
 COPY --from=builder /build/templates/*.html ./templates/
 
 
-ENTRYPOINT ./homepage
+ENTRYPOINT ./easytls
