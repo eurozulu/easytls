@@ -10,3 +10,4 @@ This domain must match the domain of the host server in order to validate owners
 
 If environment variable is not set, will work in 'developer' mode, where a simple, self signed certificate is generated instead,.
 
+Docker image can be found:  `https://hub.docker.com/repository/docker/eurospoofer/easytls`
