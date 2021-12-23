@@ -30,7 +30,7 @@ func main() {
 		TLSConfig:    cfg.Config(),
 		TLSNextProto: make(map[string]func(*http.Server, *tls.Conn, http.Handler), 0),
 	}
-
+	log.Printf("Starting to listen for domain %s\n", domain)
 	err = srv.ListenAndServeTLS("", "")
 	if err != http.ErrServerClosed {
 		log.Fatalln(err)
