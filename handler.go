@@ -16,7 +16,8 @@ const contentFolder = "content"
 const templateFolder = "templates"
 
 type Handler struct {
-	temps map[string]*template.Template
+	Verbose bool
+	temps   map[string]*template.Template
 }
 
 var templatePages = []string{"basepage.html"}
@@ -24,6 +25,9 @@ var templatePages = []string{"basepage.html"}
 var pages = findPages()
 
 func (h Handler) handleRequest(w http.ResponseWriter, req *http.Request) {
+	if h.Verbose {
+		log.Printf("request to %s: %v", req.URL, req.Header)
+	}
 	w.Header().Add("Strict-Transport-Security", "max-age=63072000; includeSubDomains")
 
 	switch req.Method {
